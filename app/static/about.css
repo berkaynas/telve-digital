@@ -1,0 +1,53 @@
+/* About Bölümü */
+.about-section {
+    padding: 80px 30px; /* Bölümün etrafındaki boşluğu artırır */
+    text-align: center;
+    background-color: #fff; /* Beyaz arka plan */
+}
+
+.about-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333; /* Başlık rengi */
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.8; /* Satır aralarını biraz daha açar */
+    max-width: 800px;
+    margin: 0 auto 20px; /* Paragraflar arasına 20px boşluk ekler */
+    color: #555; /* Açık siyah yazı */
+}
+
+.about-section ul {
+    list-style-type: disc; /* Nokta stilinde liste */
+    padding-left: 40px; /* Soldan boşluk */
+    margin: 20px auto; /* Listenin genel hizalamasını düzeltir */
+    max-width: 800px; /* Listenin genişliğini sınırlı tutar */
+    text-align: left; /* Listeyi sola hizalar */
+}
+
+.about-section ul li {
+    margin-bottom: 10px; /* Liste öğeleri arasına boşluk ekler */
+    line-height: 1.6; /* Liste içeriğini daha okunabilir yapar */
+}
+
+/* Mobil uyumluluk - Medya sorguları */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 20px; /* Mobilde daha az padding */
+    }
+
+    .about-section .section-title {
+        font-size: 2rem; /* Mobilde başlığı küçült */
+    }
+
+    .about-section p {
+        font-size: 1rem; /* Mobilde yazı boyutunu küçült */
+    }
+
+    .about-section ul {
+        padding-left: 20px; /* Mobilde soldan daha az boşluk */
+    }
+}

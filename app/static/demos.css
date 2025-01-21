@@ -1,0 +1,116 @@
+/* Genel Ayarlar */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Beyaz arka plan */
+    color: #000; /* Siyah yazı rengi */
+}
+
+header {
+    background-color: #343a40; /* Navbar arka plan rengi */
+    color: white;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.9); /* Siyah arka plan */
+    color: rgba(255, 255, 255, 0.7); /* Beyaz yazı */
+}
+
+/* Demos Bölümü */
+.contact-section {
+    padding: 50px 20px; /* Üst ve alt boşluk */
+    text-align: center;
+    background-color: #fff; /* Beyaz arka plan */
+}
+
+.contact-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px; /* Ortala ve başlık ile boşluk bırak */
+    color: #555; /* Açık siyah yazı */
+}
+
+.contact-form {
+    max-width: 500px; /* Formun genişliğini sınırla */
+    margin: 0 auto; /* Formu ortala */
+    text-align: left; /* Form elemanlarını sola hizala */
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #000;
+    display: block; /* Label ile input arasında boşluk */
+}
+
+.contact-form .form-control {
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Gri kenarlık */
+    border-radius: 5px;
+    padding: 10px; /* Daha küçük padding */
+    width: 100%; /* Tam genişlik */
+    font-size: 0.9rem; /* Küçük yazı boyutu */
+    box-sizing: border-box;
+}
+
+.contact-form textarea.form-control {
+    height: 80px; /* Daha küçük yükseklik */
+}
+
+.contact-form button {
+    background-color: #007bff; /* Mavi buton */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Daha küçük buton boyutu */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* Daha küçük yazı boyutu */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Daha koyu mavi hover */
+    transform: scale(1.05); /* Hover sırasında büyüleme efekti */
+}
+
+/* Mobil uyumluluk - Medya sorguları */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 40px 15px; /* Mobilde daha az padding */
+    }
+
+    .contact-section .section-title {
+        font-size: 2rem; /* Mobilde başlık boyutunu küçült */
+        margin-bottom: 15px;
+    }
+
+    .contact-section p {
+        font-size: 1rem; /* Mobilde daha küçük yazı boyutu */
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%; /* Form tam genişliğe yayılsın */
+        padding: 0 10px; /* Kenarlardan boşluk */
+    }
+
+    .contact-form .form-control {
+        font-size: 0.9rem; /* Yazı boyutunu küçült */
+        padding: 8px; /* Daha küçük padding */
+    }
+
+    .contact-form button {
+        font-size: 0.9rem; /* Buton yazı boyutu küçült */
+        padding: 8px; /* Buton padding küçült */
+    }
+}

@@ -1,0 +1,122 @@
+/* Releases Bölümü */
+.releases-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff; /* Beyaz arka plan */
+}
+
+.releases-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333; /* Başlık rengi */
+}
+
+/* Grid Yapısı */
+.releases-section .releases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Release Kartı */
+.release-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Kare görünüm */
+    cursor: pointer;
+    background: #000;
+}
+
+.release-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.release-card:hover img {
+    filter: brightness(50%); /* Resmi karartır */
+}
+
+/* Şarkı İsmi ve Tür */
+.release-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7); /* Siyah arka plan */
+    padding: 5px 0;
+    z-index: 2;
+}
+
+/* Overlay - Hover Durumunda İkonlar Görünür */
+.release-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Siyah şeffaf arka plan */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.release-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Spotify Link */
+.release-card .overlay .social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.release-card .overlay .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.release-card .overlay .social-links a:hover {
+    color: #1db954; /* Spotify yeşili */
+}
+
+/* Mobil uyumluluk - Medya sorguları */
+@media (max-width: 768px) {
+    .releases-section {
+        padding: 40px 15px; /* Mobilde daha az padding */
+    }
+
+    .releases-section .section-title {
+        font-size: 2rem; /* Mobilde başlık boyutunu küçült */
+        margin-bottom: 20px;
+    }
+
+    .releases-section .releases-grid {
+        gap: 15px; /* Mobilde grid aralığını azalt */
+    }
+
+    .release-card {
+        aspect-ratio: 1 / 1; /* Mobilde kare formatı koru */
+    }
+
+    .release-info {
+        font-size: 0.9rem; /* Mobilde metin boyutunu küçült */
+        padding: 4px 0; /* Mobilde daha az padding */
+    }
+
+    .release-card .overlay .social-links a {
+        font-size: 1.2rem; /* Mobilde ikon boyutunu küçült */
+    }
+}

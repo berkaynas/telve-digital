@@ -1,0 +1,28 @@
+[
+    {
+        "Name": "Berk Kaynas",
+        "Bio": "The founder of Telve, Berk Kaynaş, discovered his passion for music at the age of six when he started taking piano lessons. Over the years, he expanded his musical abilities by learning to play the guitar and later, the trumpet, as a member of his middle school band. In high school, he played guitar and drums in a music group while also diving into music production, honing both his creative and technical skills. In 2020, during the pandemic, Berk released his first track, marking the beginning of his journey as a music producer. Simultaneously, he began teaching DJ courses at a DJ academy while actively performing at renowned venues in Istanbul, such as Klein Garten, Soho House, and Simone Istanbul. His involvement in events and live performances naturally transitioned into teaching music production, where he gained valuable experience in various areas like ghost production, theater music, TV sound design, and documentary scores. Under the moniker Caynas, Berk continued to release his own tracks in the electronic music scene, while also collaborating with one of Turkey’s most prominent rock bands, Gripin, to produce a remix album. Now, he is spearheading the launch of Telve Digital with the release of \"Amacı Yok,\" a single created in collaboration with Ceren Kaan. With his rich musical background and visionary approach, Berk Kaynaş aims to transform Telve into more than just a record label—an ecosystem that touches every aspect of the music industry.",
+        "Social": {
+            "spotify": "https://open.spotify.com/intl-tr/artist/4AfRFD7jpVubZaOIdHd1OB?si=JWwaGHBpSVKmecmY2TQH3w",
+            "instagram": "https://www.instagram.com/berkkaynas/"
+        },
+        "ImagePath": "/static/artist_images/berkkaynas_artist.jpg"
+    },
+
+    {
+        "Name": "Ceren Kaan",
+        "Bio": "This could be you! Telve is always looking for fresh talent to showcase. Are you the next artist to join our roster? Send us your demos today and take the first step towards becoming part of the Telve family.",
+        "Social": {
+            "spotify": "https://open.spotify.com/intl-tr/artist/3n4DDdWeJRXjFev2FNFlrG?si=uXHCV-dDTKmsqahc3VYu6Q",
+            "instagram": "https://www.instagram.com/cerenkaan/"
+        },
+        "ImagePath": "/static/artist_images/cerenkaan_artist.jpg"
+    },
+
+    {
+        "Name": "Who Next?",
+        "Bio": "This could be you! Telve is always looking for fresh talent to showcase. Are you the next artist to join our roster? Send us your demos today and take the first step towards becoming part of the Telve family.",
+        "Social": null,
+        "ImagePath": "/static/artist_images/who_next.jpg"
+    }
+]

@@ -1,0 +1,75 @@
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+
+.contact-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Mobil uyumluluk - Medya sorguları */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 80px 15px; /* Daha az padding */
+    }
+
+    .contact-section .section-title {
+        font-size: 2rem; /* Mobilde daha küçük başlık */
+        margin-bottom: 15px;
+    }
+
+    .contact-section p {
+        font-size: 1rem; /* Mobilde daha küçük yazı boyutu */
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%; /* Formu tam genişlikte yap */
+        padding: 0 10px; /* Kenarlardan boşluk bırak */
+    }
+
+    .contact-form .form-control {
+        font-size: 0.9rem; /* Daha küçük input yazısı */
+        padding: 8px; /* Daha az padding */
+    }
+
+    .contact-form .btn {
+        font-size: 0.9rem; /* Butonu küçült */
+        padding: 8px; /* Daha az padding */
+    }
+}

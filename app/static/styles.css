@@ -1,0 +1,175 @@
+/* Genel Stil Ayarları */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #000;
+    color: white;
+}
+
+/* Scrollbar Zorunluluğu */
+html {
+    height: 100%;
+    overflow-y: scroll; /* Her zaman scroll bar göster */
+}
+
+/* Navbar Ayarları */
+.navbar {
+    position: fixed; /* Navbar sabit */
+    top: 0;
+    width: 100%; /* Tam genişlik */
+    height: 80px; /* Navbar yüksekliği */
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Dikey hizalama */
+    justify-content: space-between; /* Sol: Logo, Orta: Linkler, Sağ: İkonlar */
+    background-color: #343a40; /* Arka plan rengi */
+    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar-brand .logo {
+    max-height: 180px; /* Logonun yüksekliği sabit, bozulmadan görünür */
+    width: auto; /* Oranı koruyarak genişlik otomatik */
+    object-fit: contain; /* İçeriği düzgün sığdır */
+}
+
+/* Navbar Linkler */
+.navbar-nav {
+    flex-grow: 1; /* Ortalamayı mümkün kılar */
+    display: flex;
+    justify-content: center; /* Linkleri tam ortala */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 20px; /* Linkler arası boşluk */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sosyal Medya İkonları */
+.d-flex.gap-3 {
+    display: flex;
+    gap: 40px; /* İkonlar arasındaki boşluk artırıldı */
+    margin-right: 80px; /* Sağdaki sosyal medya ikonları için ekstra boşluk */
+}
+
+.d-flex.gap-3 > a {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+}
+
+/* Spotify Hover Rengi */
+.d-flex.gap-3 > a .bi-spotify:hover {
+    color: #1db954; /* Spotify yeşili */
+}
+
+/* Instagram Hover Rengi */
+.d-flex.gap-3 > a .bi-instagram:hover {
+    color: #E1306C; /* Instagram kırmızı-pembe */
+}
+
+/* Video Bölümü */
+main video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 80px; /* Navbar ile hizalı */
+}
+
+/* Light Section Ayarları */
+.light-section {
+    background-color: #f8f9fa; /* Açık gri arka plan */
+    color: #000; /* Siyah yazı */
+    padding: 5rem 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Footer Ayarları */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p:hover {
+    color: #fff;
+}
+
+/* Mobil uyumluluk - Medya sorguları */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px; /* Mobilde navbar yüksekliğini azalt */
+    }
+
+    .navbar-brand .logo {
+        max-height: 100px; /* Logoyu küçült */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Link yazı boyutunu küçült */
+        margin: 0 10px; /* Linkler arasındaki boşluğu azalt */
+    }
+
+    .light-section {
+        padding: 3rem 0; /* Mobilde daha az padding */
+    }
+
+    section h2 {
+        font-size: 2rem; /* Başlık boyutunu küçült */
+    }
+
+    section p {
+        font-size: 1rem; /* Yazı boyutunu küçült */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Footer yazı boyutunu küçült */
+        padding: 10px 0; /* Daha az padding */
+    }
+}

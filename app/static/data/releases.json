@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Berk Kaynas, Ceren Kaan - Amacı Yok",
+        "type": "Single",
+        "image": "/static/release_images/amaciyok.jpg",
+        "spotify": "https://open.spotify.com/track/your_track_id"
+    }
+    ,
+    {
+        "title": "What Next?",
+        "type": "",
+        "image": "/static/release_images/what_next.jpg",
+        "spotify": null
+    }
+]
